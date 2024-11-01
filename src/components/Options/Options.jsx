@@ -1,4 +1,4 @@
-const Options = ({ updateFeedback, totalFeedback, resetFeedback }) => {
+const Options = ({ updateFeedback, resetFeedback, totalFeedback }) => {
   return (
     <div>
       <h2>Leave Your Feedback</h2>
@@ -9,4 +9,5 @@ const Options = ({ updateFeedback, totalFeedback, resetFeedback }) => {
     </div>
   );
 };
+
 export default Options;

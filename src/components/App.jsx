@@ -1,8 +1,7 @@
 import Description from "./Description/Description";
 import Feedback from "./Feedback/Feedback";
 import Options from "./Options/Options";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const App = () => {
   const [feedback, setFeedback] = useState({
@@ -39,7 +38,11 @@ const App = () => {
   return (
     <div>
       <Description />
-      <Options updateFeedback={updateFeedback} resetFeedback={resetFeedback} />
+      <Options
+        updateFeedback={updateFeedback}
+        resetFeedback={resetFeedback}
+        totalFeedback={totalFeedback}
+      />
       {totalFeedback > 0 && (
         <Feedback
           feedback={feedback}
